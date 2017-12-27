@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>زمراً زمرا</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    body{
+      background-image: url('https://theinnovationenterprise.com/media/W1siZiIsImltYWdlcy93ZWItYmFja2dyb3VuZC1oZWFsdGgtZWRpdC5wbmciXV0/web-background-health-edit.png?sha=3d7f305a5528a06f');
+    }
+  </style>
+
+    <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+  </head>
+  <script type="text/javascript" src = "./signinAdmin.js"></script>
+<div ng-module="signinAdmin">
+<div>
+  <div class="container well col-lg-4 col-lg-offset-4">
+      <div class="page-header text-center">
+        <h1><meduim style="font-family:Open Sans; font-weight:bold; color:#555;">Please Login</meduim></h1>
+      </div>
+          <form role="form" class="form-login" action="/login" method="post">
+
+          <input type="text" ng-model="username" name="username" class="form-control" id="username" placeholder="User Name" required="required"><br>
+            <input type="password" ng-model="password" name="password" id="password" class="form-control" placeholder="Password" required="required"> <br>
+      <button type="submit" class="btn btn-danger btn-block" ng-click="submit()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

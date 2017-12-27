@@ -4,6 +4,10 @@ var app = express();
 
 var morgan = require('morgan');
 
+var mysql = require('mysql');
+
+var db = require ('./database/db.js');
+
 app.use(morgan('dev'));
 
 var bodyParser = require('body-parser');  
@@ -20,11 +24,15 @@ app.get('/', (req, res) => {
 })
 
 app.get('/signinAdmin', (req, res) => {
-  res.redirect('signinAdmin.js');
+  res.redirect('loginAdmin.html');
 })
 
 app.get('/signinUser', (req, res) => {
-  res.redirect('signinUser.js');
+  res.redirect('Show.html');
+})
+
+app.post('/login', (req,res) => {
+	res.send( req.body.username);
 })
 var port = process.env.PORT || 3000
 app.listen(port, () => {
