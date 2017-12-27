@@ -1,3 +1,4 @@
+
 angular.module('app')
 .controller('AppCtrl', function($scope){
 
@@ -6,4 +7,5 @@ angular.module('app')
  .component('main', {
   controller:"AppCtrl",
    templateUrl: `./index.html`
+
  })
